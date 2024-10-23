@@ -1,0 +1,221 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(38, 38, 38);
+    margin: 0;
+    padding: 20px;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(29, 29, 29);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid white ;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px solid #2708d9;
+    border-radius: 10px;
+    background-color: #2708d9;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    color: white;
+}
+
+.project:hover {
+    background-color: #320efe;
+    transform: scale(1.02);
+}
+
+h2 {
+    color: white;
+    font-size: 1.8em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details {
+    display: none;
+    margin-top: 15px;
+    width: 850px;
+    border: 1px solid;
+    border-radius: 15px;
+}
+
+.details.visible {
+    display: block;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+p {
+    color: white;
+}
+
+strong {
+    color: #000;
+    
+}
+
+.details ul,p,strong{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.details a{
+    margin-left: 640px;
+    margin-bottom: 15px;
+}
+.github-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f5f5f5;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.github-link:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+.github-link i {
+    margin-right: 8px;
+    color: #000;
+    transition: color 0.3s;
+    font-size: 20px;
+}
+
+.github-link:hover i {
+    color: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .github-link {
+        padding: 8px 12px;
+        font-size: 0.9em;
+    }
+}
+.rules-button {
+    background-color: #2708d9;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 895px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.rules-button:hover {
+    background-color: #300bff;
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    
+}
+
+.modal-content {
+    background-color: #2708d9;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    animation: zoom-in 0.3s;
+    color: #000;
+    
+}
+.modal-content{
+    color: #000;
+} 
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.fade-in {
+    animation: fadeIn 0.3s;
+}
+
+.fade-out {
+    animation: fadeOut 0.3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes zoom-in {
+    from { transform: scale(0.7); }
+    to { transform: scale(1); }
+}

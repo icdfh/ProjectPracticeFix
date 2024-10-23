@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты для исправления</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Практическая работа: Исправление ошибок и доработка проектов</h1>
+        <button class="rules-button" onclick="openModal()">Правила</button>
+
+        <div id="rulesModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Правила и инструкции</h2>
+                <p>1. Все проекты должны быть завершены в указанные сроки.</p>
+                <p>2. При работе над проектами необходимо соблюдать стандарты кодирования.</p>
+                <p>3. Ошибки должны быть исправлены, а код — улучшен с учетом рекомендаций.</p>
+                <p>4. При необходимости используйте документацию и справочные материалы.</p>
+                <p>5. Все изменения должны быть протестированы перед отправкой на проверку.</p>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>1. Интернет-магазин с корзиной (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить ошибку, при которой добавленные товары не сохраняются в корзине после перезагрузки страницы.</li>
+                    <li>Добавить возможность удаления товаров из корзины.</li>
+                    <li>Реализовать подсчет общей стоимости товаров.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Кнопка "Добавить в корзину" не работает должным образом; динамически не обновляется список товаров в корзине.</p>
+                <a href="https://github.com/icdfh/internetshop" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>2. Список задач (To-Do List) с фильтрацией (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить баги, при которых задачи не удаляются корректно.</li>
+                    <li>Добавить возможность фильтрации задач по статусу: "выполнено", "в процессе".</li>
+                    <li>Реализовать сохранение задач в localStorage.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Кнопки "Удалить" и "Фильтр" работают некорректно; данные не сохраняются между сессиями.</p>
+                <a href="https://github.com/icdfh/todo" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>3. Форма регистрации с валидацией (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить баги в валидации, при которых некоторые поля пропускаются.</li>
+                    <li>Добавить динамическую проверку email на корректность.</li>
+                    <li>Исправить стили и сделать их более аккуратными.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Некорректная проверка полей, неправильные сообщения об ошибках.</p>
+                <a href="https://github.com/icdfh/validationform" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>4. Игра "Крестики-нолики" (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить баг, при котором не срабатывает проверка победителя.</li>
+                    <li>Добавить счетчик побед для двух игроков.</li>
+                    <li>Реализовать возможность начать новую игру без перезагрузки страницы.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Неверная логика определения победителя, невозможность сброса игры.</p>
+                <a href="https://github.com/icdfh/tic-tac-toe" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>5. Приложение погоды с использованием API (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить ошибку, при которой данные не обновляются при изменении города.</li>
+                    <li>Добавить возможность выбора нескольких городов и отображения погоды для всех выбранных.</li>
+                    <li>Улучшить стили отображения данных о погоде.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Некорректное обновление данных, запрос API отправляется неверно.</p>
+                <a href="https://github.com/icdfh/weatherApi" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>6. Галерея изображений с модальным окном (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить баги в открытии модального окна при клике на изображение.</li>
+                    <li>Реализовать динамическую загрузку изображений при прокрутке вниз.</li>
+                    <li>Исправить стили отображения изображений и модального окна.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Некорректная работа с изображениями при прокрутке; модальное окно иногда не закрывается.</p>
+                <a href="https://github.com/icdfh/imgSlider" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>7. Медиа-плеер с плейлистом (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить баг, при котором плейлист не обновляется при добавлении нового трека.</li>
+                    <li>Реализовать сохранение состояния плейлиста между сессиями.</li>
+                    <li>Улучшить стили и управление воспроизведением.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Сбои при добавлении треков в плейлист, отсутствие сохранения состояния.</p>
+                <a href="https://github.com/icdfh/mediaPlayer" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>8. Калькулятор с историей вычислений (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить ошибку, при которой история вычислений не отображается после нажатия кнопки "Равенство".</li>
+                    <li>Реализовать возможность очистки истории.</li>
+                    <li>Добавить стили для более аккуратного отображения.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> История вычислений не сохраняется, калькулятор выдает неправильные результаты при сложных операциях.</p>
+                <a href="https://github.com/icdfh/calculator" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>9. Таймер обратного отсчета (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить баг, при котором таймер не обновляется правильно после нажатия кнопки "Старт".</li>
+                    <li>Добавить возможность паузы и сброса таймера.</li>
+                    <li>Реализовать звуковое уведомление после окончания таймера.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Таймер иногда сбрасывается некорректно, ошибки в расчетах времени.</p>
+                <a href="https://github.com/icdfh/timer" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+
+        <div class="project" onclick="toggleDetails(this)">
+            <h2>10. Форум с комментариями (HTML, CSS, JavaScript) <i class="fas fa-chevron-down"></i></h2>
+            <div class="details">
+                <p><strong>Задачи:</strong></p>
+                <ul>
+                    <li>Исправить баг, при котором новые комментарии не добавляются корректно.</li>
+                    <li>Реализовать сортировку комментариев по времени добавления.</li>
+                    <li>Улучшить стили и добавить аватары для пользователей.</li>
+                </ul>
+                <p><strong>Проблемы:</strong> Некорректная работа формы комментариев, отсутствие сортировки.</p>
+                <a href="https://github.com/icdfh/commentforum" target="_blank" class="github-link"><i class="fab fa-github"></i> Ссылка на проект</a>
+            </div>
+        </div>
+        <p style="margin-left: 650px;"><strong style="color: white;">By Dzhetibergen Madiyar(icdfh)</strong></p>
+
+    </div>
+
+    <script>
+        function toggleDetails(projectElement) {
+            const details = projectElement.querySelector('.details');
+            const icon = projectElement.querySelector('h2 i');
+            details.classList.toggle('visible');
+            icon.classList.toggle('fa-chevron-down');
+            icon.classList.toggle('fa-chevron-up');
+        }
+        
+        function openModal() {
+            const modal = document.getElementById('rulesModal');
+            modal.style.display = 'block';
+            modal.classList.add('fade-in');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('rulesModal');
+            modal.classList.remove('fade-in');
+            modal.classList.add('fade-out');
+            setTimeout(() => {
+                modal.style.display = 'none';
+                modal.classList.remove('fade-out');
+            }, 300);
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('rulesModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+    </script>
+
+</body>
+</html>
